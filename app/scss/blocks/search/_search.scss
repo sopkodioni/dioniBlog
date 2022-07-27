@@ -1,0 +1,19 @@
+.search-blocks{
+    padding: 80px 0;
+
+    &__container{
+        width: 1070px;
+    }
+
+    &__title{
+        font-size: 30px;
+        line-height: 38px;
+        display: block;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    
+    .post-grid{
+        margin: 0;
+    }
+}

@@ -1,0 +1,11 @@
+.callback-form{
+    &__input{
+        margin-bottom: 20px;
+    }
+
+    &__textarea{
+        resize: none;
+        height: 81px;
+        margin-bottom: 20px;
+    }
+}

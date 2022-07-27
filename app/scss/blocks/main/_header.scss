@@ -1,0 +1,29 @@
+.header{
+    padding: 7px 0;
+    position: relative;
+    background-color: $whiteColor;
+    // box-shadow: 4px 0px 5px #898989;
+
+    &__logo{
+        transform: translateY(5px);
+    }
+
+    &__nav{
+        margin-right: 40px;
+    }
+
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__right{
+        display: flex;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+        &--hide{
+            display: none;
+        }
+    }
+}

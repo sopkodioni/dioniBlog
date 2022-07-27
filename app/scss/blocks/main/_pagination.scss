@@ -1,0 +1,34 @@
+.pagination{
+    @include flex-all-center;
+
+    &__item{
+        &:not(:last-child){
+            margin-right: 20px;
+        }
+    }
+
+    &__link{
+        font-size: 18px;
+        line-height: calc(23 / 18);
+        color: $blackColor;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            color: $accentColor;
+        }
+    }
+
+    &__link--current{
+        position: relative;
+        color: $accentColor;
+        cursor: default;
+        &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 1px;
+            width: 100%;
+            height: 1px;
+            background-color: $accentColor;
+        }
+    }
+}

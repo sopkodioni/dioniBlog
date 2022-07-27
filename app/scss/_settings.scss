@@ -1,0 +1,112 @@
+html {
+    box-sizing: border-box;
+}
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $fontFamily, sans-serif;
+    font-weight: 400;
+    overflow-anchor: none;
+    background-color: #f9f9f9;
+    font-size: 18px;
+}
+
+img {
+    max-width: 100%;
+}
+  
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-reset{
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+// Макетные настройки ============================================================================================================================
+.container{
+    max-width: 1430px; // (1140[ширина контейнера] + 30[отступы] = 1170)
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.form-input{
+    font-family: 'Futura PT', sans-serif;
+    padding: 13px 30px;
+    width: 100%;
+    border: none;
+    background-color: #F5F5F5;;
+    outline: none;
+    border-radius: 20px;
+    font-size: 18px;
+    color: $darkColor;
+    &::placeholder{
+        font-size: 18px;
+        line-height: calc(23 / 18);
+        color: rgba(47, 34, 34, 0.4);
+    }
+}
+
+.form-btn{
+    padding: 13px 0;
+    width: 100%;
+    border: none;
+    background-color: $accentColor;
+    border-radius: 20px;
+    font-family: 'Futura PT', sans-serif;
+    font-size: 18px;
+    line-height: calc(23 / 18);
+    color: $whiteColor;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+
+    &:hover{
+        background-color: #475dd7;
+    }
+    &:active{
+        background-color: #2e47d4;
+    }
+    
+    span{
+        margin-right: 10px;
+    }
+
+    svg path{
+        fill: $whiteColor;
+    }
+}
+
+.phone{
+    font-size: 18px;
+    font-weight: 500;
+    color: $accentColor;
+    background-image: url('../img/icons/phoneIcon.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 24px;
+}

@@ -1,0 +1,71 @@
+@import 'mixins';
+@import 'vars';
+@import 'libs';
+@import 'fonts';
+@import 'settings';
+
+// ================================================= MAIN PAGE =============================================================
+// Big blocks 
+@import 'blocks/main/header';
+@import 'blocks/main/main';
+@import 'blocks/main/banner';
+@import 'blocks/main/content';
+@import 'blocks/main/posts';
+@import 'blocks/main/pagination';
+@import 'blocks/main/footer';
+
+// Small blocks 
+@import 'blocks/main/nav';
+@import 'blocks/main/post-grid';
+@import 'blocks/main/blog-post';
+@import 'blocks/main/blog-title';
+@import 'blocks/main/popular-posts';
+@import 'blocks/main/subscribe';
+
+
+// ================================================ POST PAGE =============================================================
+// Big blocks 
+@import 'blocks/post/post-banner.scss';
+@import 'blocks/post/post-content.scss';
+@import 'blocks/post/post.scss';
+
+
+// =============================================== CATEGORY PAGE ==========================================================
+@import 'blocks/category/category.scss';
+
+// =============================================== CONTACTS PAGE ==========================================================
+@import 'blocks/contacts/contacts.scss';
+
+// Small blocks
+@import 'blocks/contacts/callback-form.scss';
+@import 'blocks/contacts/social.scss';
+@import 'blocks/contacts/address.scss';
+
+// =============================================== 404 PAGE ==========================================================
+@import 'blocks/404/404.scss';
+
+
+// =============================================== SEARCH PAGE ==========================================================
+@import 'blocks/search/search.scss';
+@import 'blocks/search/search-not-found.scss';
+@import 'blocks/search/wrap-flex.scss';
+
+
+
+
+// ----- header search
+@import 'blocks/search-form/search-form.scss';
+
+
+
+
+
+
+
+
+
+
+
+
+@import 'animations';
+@import 'media';
