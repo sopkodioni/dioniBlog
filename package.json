@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Start gulp",
   "main": "index.js",
-  "homepage": "https://github.com/sopkodioni/portfolio",
+  "homepage": "https://github.com/sopkodioni",
   "scripts": {
-    "deploy": "gh-pages -d app"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dioni",
   "license": "ISC",
