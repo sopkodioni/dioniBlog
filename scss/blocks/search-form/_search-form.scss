@@ -1,0 +1,49 @@
+.header-search{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: calc(100% + 80px);
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1040px;
+    background-color: $whiteColor;
+    border-radius: 20px;
+    width: 100%;
+    padding: 25px 40px;
+    box-shadow: 4px 8px 40px rgba(8, 24, 111, 0.2);
+    transition: all 0.3s ease-in-out;
+    
+
+    &--active{ // for JS
+        opacity: 1;
+        visibility: visible;
+        animation: showFormSearch 0.3s ease-in-out;
+    }
+
+    &__form{
+        display: flex;
+        align-items: center;
+    }
+
+    &__close{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: -20px;
+        right: -20px;
+
+        svg{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__input{
+        margin-right: 20px;
+    }
+
+    &__btn{
+        width: 195px;
+    }
+}
+

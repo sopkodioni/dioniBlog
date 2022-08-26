@@ -1,0 +1,41 @@
+.popular-posts{
+    margin-bottom: 30px;
+
+    &__title{
+        margin-bottom: 16px;
+    }
+
+    &__item{
+        &:not(:last-child){
+            border-bottom: 1px solid rgba(47, 34, 34, 0.1);
+        }
+
+        & .blog-post:hover{
+            box-shadow: none !important;
+        }
+        &:hover{
+            box-shadow: none !important;
+        }
+    }
+
+    &__article{
+        padding: 10px 0;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+        
+        .blog-post__title{
+            font-size: 18px;
+            line-height: calc(23 / 18);
+            margin-bottom: 10px;
+        }
+
+        .blog-post__date{
+            font-size: 18px;
+            line-height: calc(23 / 18);
+            position: initial;
+            color: rgba(47, 34, 34, 0.4);
+        }
+    }
+}

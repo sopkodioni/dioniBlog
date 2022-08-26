@@ -1,0 +1,13 @@
+.category-banner{
+    height: 180px;
+    background-image: none;
+    background-color: rgba($accentColor, 0.1);
+    @include flex-all-center;
+
+    &__title{
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 38px;
+        color: $accentColor;
+    }
+}

@@ -1,0 +1,301 @@
+// screen 1366px
+@media (max-width: 1366px) {
+    .banner{
+        height: 250px;
+    }
+    
+    .blog-post{
+        &__category{
+            font-size: 14px;
+            margin-bottom: 15px !important;
+        }
+    }
+
+    .blog-post--main{
+        margin-bottom: $mediaMainOffset;
+    }
+
+    .content{
+        padding-top: 35px;
+        margin-bottom: 80px;
+
+        &__container{
+            gap: $mediaMainOffset;
+
+        }
+    }
+
+    .post-grid{
+        gap: $mediaMainOffset;
+    }
+
+    .blog-title{
+        font-size: 20px;
+        line-height: calc(24 / 20);
+    }
+
+    .form-input{
+        padding: 10px 21px;
+    }
+
+    .footer{
+        &__logo{
+            margin-bottom: 25px;
+        }
+
+        &__nav{
+            margin-bottom: 45px;
+        }
+    }
+
+    // contacts =-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-=
+    .contacts{
+        &__form{
+            flex: 1;
+        }
+    }
+}
+
+@media (max-width: 1180px) {
+// contacts =-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-=
+    .contacts{
+        padding: 70px 0;
+
+        &__info{
+            padding-left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 0;
+        }
+
+        &__form{
+            padding-right: 0;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .content{
+        &__container{
+            display: block;
+        }
+    }
+
+    .posts{
+        margin-bottom: 80px;
+    }
+
+    .post-grid{
+        margin-bottom: 80px;
+    }
+
+    .popular-posts{
+        &__title{
+            font-size: 24px;
+        }
+        
+        &__list{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+
+        &__item{
+            flex-grow: 1;
+            max-width: 30%;
+            border-bottom-color: transparent !important;
+        }
+
+        &__article{
+            justify-content: space-between;
+        }
+    }
+
+    .subscribe{
+        padding: 40px 148px;
+        display: block;
+
+        &__title{
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .sub-form{
+        display: flex;
+        align-items: center;
+        
+        &__input{
+            margin-bottom: 0;
+            margin-right: 20px;
+            padding: 13px 30px;
+        }
+    }
+
+
+    // post page =-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-=
+    .post-banner{
+        padding: 30px;
+
+
+        &__container{
+            height: 230px;
+        }
+    }
+    
+    .post-content{
+        &__container{
+            display: block;
+        }
+
+        .popular-posts{
+            margin-bottom: 60px;
+        }
+    }
+
+    .post{
+        max-width: none;
+
+        &__img{
+            text-align: center;
+        }
+    }
+
+    .post-wrapper{
+        margin-bottom: 60px;
+    }
+
+    .post-links{
+        max-width: none;
+
+    }
+}
+
+@media (max-width: 767px) {
+    .banner{
+        height: 200px;
+    }
+
+    .blog-post{
+        &__descr{
+            padding-right: 0;
+        }
+    }
+
+    .blog-post--main{
+        height: auto;
+    }
+    
+    .nav{
+        display: none;
+    }
+    .post-grid{
+        display: block;
+    }
+    .post-grid{
+        &__item:not(:last-child){
+            margin-bottom: $mediaMainOffset;
+        }
+    }
+
+    .popular-posts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__list{
+            display: block;
+        }
+
+        &__item{
+            max-width: none;
+            &:not(:last-child){
+                border-bottom: 1px solid rgba(47, 34, 34, 0.1) !important;
+            }
+        }
+    }
+
+    .subscribe{
+        padding: 40px 110px;
+    }
+
+
+    // contacts =-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-==-=-=-=-=
+    .contacts{
+        &__container{
+            display: block;
+        }
+
+        &__info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+            width: 100%;
+        }
+
+        &__form{
+            width: 100%;
+        }
+    }
+
+
+    // post page =-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-=
+    .post-banner{
+        padding: 0 0 30px 0;
+
+        &__container{
+            border-radius: 0px;
+        }
+    }
+    
+    .post-links{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        &>*:not(:last-child){
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .subscribe{
+        display: flex;
+        align-items: center;
+        padding: 40px 0;
+    }
+
+    .sub-form{
+        width: 300px;
+        display: block;
+        &__input{
+            margin-bottom: 20px;
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 426px) {
+    .subscribe__title{
+        font-size: 20px;
+    }
+
+
+    .sub-form{
+        width: 230px;
+        
+    }
+}
+
+@media (max-width: 380px) {
+    .contacts-form-wrapper{
+        padding: 40px 35px;
+    }
+
+    .not-found{
+        padding: 75px 0;
+    }
+}

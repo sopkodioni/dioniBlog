@@ -1,0 +1,10 @@
+.content{
+    padding-top: $mainOffset;
+    margin-bottom: 112px;
+
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: $mainOffset;
+    }
+}
